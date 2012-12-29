@@ -25,7 +25,7 @@ for (var i = 0; i < 3; i++) {
 function digits(n) { return ('' + n).split(''); }
 
 function reset() {
-    bands[0].css('background-color', colors[0]).data('val', 0);
+    bands[0].css('background-color', colors[1]).data('val', 1);
     bands[1].css('background-color', colors[0]).data('val', 0);
     bands[2].css('background-color', colors[0]).data('val', 0);
 }
@@ -63,5 +63,6 @@ function select() {
 }
 
 reset();
-$val.on('keyup keydown change', parse);
+$val.on('keyup keydown change', parse).val();
+unparse();
 $(document.body).on('click touchstart', 'div.option', select);
