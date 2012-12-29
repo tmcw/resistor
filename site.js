@@ -57,10 +57,11 @@ function unparse() {
 
 function select() {
     var i = $(this).data('i'),
-    val = $(this).data('val');
+        val = $(this).data('val');
     $('.band-' + i).css('background-color', colors[val]).data('val', val);
     unparse();
 }
 
+reset();
 $val.on('keyup keydown change', parse);
 $(document.body).on('click touchstart', 'div.option', select);
