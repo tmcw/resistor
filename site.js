@@ -64,5 +64,11 @@ function select() {
 
 reset();
 $val.on('keyup keydown change', parse).val();
+
+$('.toggle-extra').click(function(e) {
+    $('.extra').toggle();
+    return e.preventDefault();
+});
+
 unparse();
 $(document.body).on('click touchstart', 'div.option', select);

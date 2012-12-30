@@ -63,6 +63,7 @@ body {
 }
 .colors {
     position:relative;
+    height:200px;
 }
 .color {
     position:absolute;
@@ -77,6 +78,9 @@ body {
 .color-2 {
     left:55%;
 }
+.option {
+    height:20px;
+}
 .option span {
     padding:0 1px;
     display:block;
@@ -88,4 +92,13 @@ body {
 }
 .form {
     margin-bottom:20px;
+}
+.extra { display: none; }
+.toggle-extra {
+    text-decoration:none;
+    display:block;
+    font-size:30px;
+    margin-top:20px;
+    color:#888;
+    text-align:center;
 }
